@@ -1,0 +1,77 @@
+.new-container{
+    display: flex;
+    justify-content: center;
+}
+.new-container h2{
+    font-size: xx-large;
+    font-weight: 800;
+}
+.form-container{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form-container label{
+    font-size: 18px;
+}
+.form-container ::placeholder{
+    font-size: large;
+}
+.form-container input{
+    border:1px solid rgb(207, 202, 202);
+    padding: 0.7rem;
+    border-radius: 7px;
+    font-size: large;
+}
+.form-container textarea{
+    border:1px solid rgb(207, 202, 202);
+    padding: 2.1rem;
+    border-radius: 7px;
+    font-size: large;
+}
+.title-container,.images,.price,.country,.location{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 90px;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 120px;
+}
+.price-country{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.country{
+    width: 40vw;
+}
+#btn{
+    margin: 10px 0 20px 0;
+    width: 60px;
+    height: 34px;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    font-size: large;
+}
+#btn:hover{
+    cursor: pointer;
+}
+#btn-edit{
+    margin: 10px 0 20px 0;
+    width: 60px;
+    height: 34px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(230, 14, 14);
+    font-size: large;
+    border: none;
+}
+#btn-edit:hover{
+    cursor: pointer;
+}

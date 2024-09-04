@@ -1,0 +1,21 @@
+.footer-container{
+    background-color: gray;
+    text-align: center;
+    padding: 15px 0 15px 0;
+}
+.social-media{
+    
+}
+.fa-brands{
+    color: #222222;
+    padding-left: 10px;
+}
+.privacy a{
+    text-decoration: none;
+    color: #000000;
+    padding-left: 20px;
+}
+.privacy a:hover{
+    text-decoration: underline;
+   
+}

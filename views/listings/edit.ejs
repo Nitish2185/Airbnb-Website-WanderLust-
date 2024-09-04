@@ -1,0 +1,53 @@
+<% layout("/layouts/boilerplate") %>
+<link rel="stylesheet" href="/css/new.css">
+
+<!-- <body>
+    <h2>Edit your Listing</h2>
+    <form method="POST" action="/listings/<%= listing._id%>?_method=PUT" >
+    <input  name="listing[title]" value="<%= listing.title%>"  type="text"/><br><br>
+    <textarea name="listing[description]"><%= listing.description %></textarea><br><br>
+    <input  name="listing[image]" value="<%= listing.image%>" type="text"/><br><br>
+    <input  name="listing[price]" value="<%= listing.price%>" type="number"/><br><br>
+    <input  name="listing[location]" value="<%= listing.location%>" type="text"/><br><br>
+    <input  name="listing[country]" value="<%= listing.country%>" type="text"/><br><br>
+    <button>Edit</button>
+</form>
+</body> -->
+<body>
+    <div class="new-container">
+        <div >
+    <h2>Edit your Listing</h2>
+    <form method="POST" action="/listings/<%= listing._id%>?_method=PUT" class="form-container" >
+        <div class="title-container">
+            <label for="title">Title</label>
+    <input  name="listing[title]" value="<%= listing.title%>"  type="text"/>
+    </div>
+    <div class="description">
+        <label for="title">Description</label>
+        <textarea name="listing[description]" ><%= listing.description %></textarea>
+    </div>
+    <div class="images">
+        <label for="image">Image Link</label>
+        <input  name="listing[image]" value="<%= listing.image%>" type="text"/>
+    </div>
+    <div class="price-country">
+    <div class="price">
+        <label for="price">Price</label>
+        <input  name="listing[price]" value="<%= listing.price%>" type="number"/>
+    </div>
+    <div class="country">
+        <label for="price">Country</label>
+        <input  name="listing[country]" value="<%= listing.country%>"  type="text"/>
+    </div>
+</div>
+    <div class="location">
+        <label for="location">Location</label>
+        <input  name="listing[location]" value="<%= listing.location%>" type="text"/>
+    </div>
+    <button id="btn-edit">Edit</button>
+</div>
+</div>
+</form>
+</body>
+
+ 
